@@ -584,7 +584,7 @@ footer {
         width: 100%;
         font-size: 12px;
         height: 30px;
-        margin: 2px 20px 50px 0;
+        margin: 2px 35px 50px 0;
     }
 
     .search i {
@@ -609,7 +609,7 @@ footer {
         border-radius: 50px;
         height: 40px;
         width: 40px;
-        left: 350px;
+        left: 330px;
         color: #ffffff;
         z-index: 1000;
         cursor: pointer;
