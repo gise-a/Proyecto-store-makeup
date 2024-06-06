@@ -373,6 +373,10 @@ button {
 margin: 30px;
 }
 
+.carousel-caption button {
+    background-color:#0e224e;
+}
+
 .btn_resp button{
     background-color: #dd8b1f;
 }
@@ -537,7 +541,7 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 430px) {
     header {
-        width: 100%;
+        width: 520px;
         flex-direction: column;
         position: relative;
     }
@@ -552,7 +556,7 @@ footer {
 
     .header_pags header {
         height: 0;
-        width: 110%;
+        width: 520px;
     }
 
     .Logo img {
@@ -584,7 +588,7 @@ footer {
         width: 100%;
         font-size: 12px;
         height: 30px;
-        margin: 2px 35px 50px 0;
+        margin: 2px 90px 50px 0;
     }
 
     .search i {
@@ -695,7 +699,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 55px;
+    margin: 15px 60px;
     padding: 10px;
     }
 
@@ -718,7 +722,7 @@ option {
     }
 
     video {
-        max-width: 100%;
+        max-width: 520px;
     }
 
     #check:checked~ul {
@@ -783,6 +787,12 @@ option {
         margin: 10px 0; 
     }
 
+    .btn {
+        background-color: #181717;
+        color: #bdb4b4;
+        border: #000000;
+    }
+
     /* Formulario */
     .formulario {
         display: flex;
@@ -792,7 +802,7 @@ option {
     }
 
     .formulario h1 {
-        margin-top: 130px;
+        margin-top: 200px;
         text-shadow: none;
         color: #3b3d3f;
     }
@@ -819,7 +829,7 @@ option {
 
     /* Pie de pagina*/
     footer {
-        width: 100%;
+        width: 120% ;
         margin-top: 65px;
         bottom: 0;
         left: 0;
