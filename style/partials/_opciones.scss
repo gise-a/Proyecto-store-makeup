@@ -1,0 +1,82 @@
+.detail-sidebar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.form-elements {
+    background-color: #5e84a3;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+    h4 {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+}
+
+option {
+    font-size: 16px;
+}
+
+.awe-select-wrapper {
+    select {
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        padding: 8px;
+    }
+}
+
+.prices-list {
+    background-color: #5e84a3;
+    margin-top: 30px;
+    list-style: none;
+    padding: 40px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    @include default-cursor;
+    border-radius: 10px;
+}
+
+.col-md-6 {
+    width: 100%;
+}
+
+.info-container {
+    background-color: $colorprincipal;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px 20px;
+    line-height: 25px;
+    font-size: 16px;
+
+    i {
+        padding: 5px;
+    }
+
+    .columna {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0 0 20px;
+        background-color: $colorhover;
+        text-decoration: underline;
+    }
+
+    .column h3 {
+        text-decoration: underline;
+    }
+}
+
+.item-price button {
+    background-color: rgb(226, 131, 42);
+    margin: 5px;
+    padding: 10px;
+    @include hover-scale;
+    font-size: 15px;
+}

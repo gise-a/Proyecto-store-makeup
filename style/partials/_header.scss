@@ -1,0 +1,184 @@
+header {
+    width: 100%;
+    padding: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .header_superior {
+        max-width: 1200px;
+        margin: auto;
+        @include center-flex;
+        justify-content: space-between;
+        z-index: 1;
+
+        .Logo {
+            img {
+                width: 130px;
+                margin-left: 35px;
+                margin-top: 20px;
+                position: absolute;
+            }
+
+            p {
+                color: map-get($colors, text);
+                margin-top: 140px;
+                @include text-shadow;
+                @include base-font;
+            }
+        }
+
+        .search {
+            input {
+                width: 400px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid map-get($colors, secondary);
+            }
+
+            button {
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                color: map-get($colors, text);
+                background-color: map-get($colors, accent);
+                margin-left: 10px;
+                @include hover-scale;
+            }
+
+            i {
+                padding: 5px;
+            }
+        }
+    }
+
+    .container_menu {
+        width: 800px;
+        height: 60px;
+        padding: 0px 20px;
+        margin-left: 520px;
+        position: static;
+        border-radius: 30px;
+        box-shadow: 3px 1px 5px rgb(0, 0, 0);
+
+        .menu {
+            max-width: 1200px;
+            margin: auto;
+            height: 100%;
+
+            nav {
+                height: 100%;
+
+                ul {
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        height: 100%;
+                        list-style: none;
+                        position: relative;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            @include center-flex;
+                            padding: 15px;
+                            color: map-get($colors, text);
+                            @include text-shadow;
+                            font-size: 16px;
+                            line-height: 0.6;
+                            font-weight: bold;
+                            @include hover-scale;
+                            transition: background-color 0.1s ease;
+
+                            &:hover {
+                                background-color: map-get($colors, hover);
+                            }
+                        }
+
+                        .submenu {
+                            position: absolute;
+                            top: 60px;
+                            left: 0;
+                            height: auto;
+                            border-radius: 20px;
+                            box-shadow: 3px 1px 5px rgb(0, 0, 0);
+                            width: 170%;
+                            list-style: none;
+                            font-weight: 500;
+                            display: none;
+                            flex-direction: column;
+                            justify-content: left;
+                            text-align: left;
+                            padding: 10px;
+
+                            li {
+                                margin: 8px;
+                                text-align: center;
+
+                                a {
+                                    color: map-get($colors, text);
+                                    @include text-shadow;
+                                    font-size: 18px;
+                                    transition: all 250ms ease;
+                                    padding: 6px;
+
+                                    &:hover {
+                                        @include hover-scale;
+                                        background-color: map-get($colors, hover);
+                                        padding: 20px;
+                                        margin: 4px;
+                                        justify-content: center;
+                                        text-align: center;
+                                        width: 100%;
+                                        line-height: 0.2;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .submenu {
+                            display: block;
+                        }
+
+                        ul {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 60px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .checkbtn {
+                    display: none;
+                }
+            }
+
+            #check {
+                display: none;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.card,
+.checkbtn,
+#check,
+.search i {
+    display: none;
+}
+
+.header_pags header {
+    height: 280px;
+    background-size: cover;
+    background-image: url("../img/estrela.png");
+}

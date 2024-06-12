@@ -1,0 +1,43 @@
+footer {
+    background-color: rgb(204, 200, 200);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .dat {
+        line-height: 1;
+
+        a {
+            color: #024074;
+        }
+    }
+
+    .social {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: 1100px;
+    }
+
+    a {
+        color: #080808;
+        margin-left: 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: #024074;
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+}
