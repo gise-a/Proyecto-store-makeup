@@ -28,6 +28,8 @@
     margin: 0 20px;
 
     img {
+        -webkit-animation: scale-in-hor-center 1s cubic-bezier(.25, .46, .45, .94) both;
+        animation: scale-in-hor-center 1s cubic-bezier(.25, .46, .45, .94) both;
         width: 90%;
         height: auto;
         margin: 0 auto;
