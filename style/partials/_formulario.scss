@@ -1,62 +1,65 @@
+
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 450px;
+    margin-top: 400px;
     text-align: left;
-    padding: 10px 40px;
+    padding: 10px 30px;
 
     h1 {
         font-size: 25px;
-        justify-content: left;
-        font-family: map-get($fonts, primary); 
+        font-family: map-get($fonts, primary);
         background-color: $colorhover;
         width: 100%;
-        margin: 0 40px 50px 60px;
+        margin: 0 0 50px 0;
         text-shadow: $shadow;
+        text-align: left;
     }
 
     .datos,
     .consulta {
-        width: 700px;
+        width: 500px;
         padding: 40px;
-        background-color: rgb(144, 178, 231);
+        background-image: url(../img/mobile-img/formm.png);
         border-radius: 10px;
         margin-bottom: 40px;
         box-shadow: none;
 
-        h3 {
-            margin-bottom: 30px;
+        h2 {
+            margin-bottom: 20px;
             color: #fff;
+            text-align: left;
         }
-    }
 
-    input,
-    textarea {
-        width: 100%;
-        border-radius: 10px;
-        border: none;
-        padding: 10px;
-        margin-top: 5px;
-    }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
 
-    textarea {
-        height: 150px;
+        input,
+        textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
     }
 
     button {
         background-color: #4c68af;
         border: none;
         color: white;
-        padding: 15px 30px;
+        padding: 10px 20px;
         font-size: 18px;
-        margin: 20px;
+        margin: 20px 0;
         cursor: pointer;
         border-radius: 5px;
-    }
-
-    .terminos-politicas {
-        text-align: center;
-        margin-top: 20px;
+        margin-left: 150px;
     }
 }

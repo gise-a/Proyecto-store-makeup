@@ -64,7 +64,7 @@ header .header_superior .search button {
   border-radius: 20px;
 }
 header .header_superior .search button:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 header .header_superior .search i {
   padding: 5px;
@@ -113,7 +113,7 @@ header .container_menu .menu nav ul li a {
   transition: background-color 0.1s ease;
 }
 header .container_menu .menu nav ul li a:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 header .container_menu .menu nav ul li a:hover {
   background-color: #b88e5d;
@@ -157,7 +157,7 @@ header .container_menu .menu nav ul li .submenu li a:hover {
   line-height: 0.2;
 }
 header .container_menu .menu nav ul li .submenu li a:hover:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 header .container_menu .menu nav ul li:hover .submenu {
   display: block;
@@ -241,7 +241,7 @@ a {
   border-radius: 20px;
 }
 .titulo button:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .titulo a {
   transition: all 300ms ease;
@@ -253,7 +253,7 @@ a {
   cursor: pointer;
 }
 .titulo a:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .titulo button {
   margin-left: 1000px;
@@ -287,6 +287,187 @@ video {
   max-width: 100%;
   height: auto;
 }
+
+.contenedorr {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inicio-oferta1,
+.inicio-oferta2,
+.inicio-oferta3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+}
+.inicio-oferta1 img,
+.inicio-oferta2 img,
+.inicio-oferta3 img {
+  margin-right: 20px;
+  width: 500px;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+.inicio-oferta1 img:hover,
+.inicio-oferta2 img:hover,
+.inicio-oferta3 img:hover {
+  transform: scale(1.1);
+}
+.inicio-oferta1 ul,
+.inicio-oferta2 ul,
+.inicio-oferta3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+.inicio-oferta1 ul li,
+.inicio-oferta2 ul li,
+.inicio-oferta3 ul li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.inicio-oferta1 ul li i,
+.inicio-oferta2 ul li i,
+.inicio-oferta3 ul li i {
+  color: #333;
+  font-size: 16px;
+}
+.inicio-oferta1 ul li:hover,
+.inicio-oferta2 ul li:hover,
+.inicio-oferta3 ul li:hover {
+  transform: scale(1.2);
+}
+
+.inicio-oferta1 {
+  animation: tilt-in-left-2 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
+}
+.inicio-oferta1 .iconos {
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+  z-index: 10;
+  background-color: rgba(63, 65, 66, 0.7);
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.inicio-oferta1 .off {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  background-color: rgba(252, 119, 10, 0.897);
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: transform 0.4s ease;
+}
+.inicio-oferta1 .off:hover {
+  transform: scale(1.1);
+}
+.inicio-oferta1 img {
+  margin-left: 30px;
+}
+
+.inicio-oferta2 {
+  flex-direction: row-reverse;
+  animation: tilt-in-right-2 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
+}
+.inicio-oferta2 .iconos {
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  right: 196px;
+  z-index: 10;
+  background-color: rgba(63, 65, 66, 0.7);
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.inicio-oferta2 .off {
+  position: absolute;
+  top: 65px;
+  right: 423px;
+  background-color: rgba(252, 119, 10, 0.897);
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: transform 0.4s ease;
+}
+.inicio-oferta2 .off:hover {
+  transform: scale(1.2);
+}
+.inicio-oferta2 img {
+  margin-right: 30px;
+}
+
+.inicio-oferta3 {
+  animation: tilt-in-left-2 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+.inicio-oferta3 .iconos {
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+  z-index: 10;
+  background-color: rgba(63, 65, 66, 0.7);
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.inicio-oferta3 .off {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: rgba(252, 119, 10, 0.897);
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: transform 0.4s ease;
+}
+.inicio-oferta3 .off:hover {
+  transform: scale(1.2);
+}
+.inicio-oferta3 img {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.cajaa {
+  display: flex;
+  margin: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: della respira;
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s ease;
+}
+.cajaa p {
+  font-family: della respira;
+  text-align: center;
+}
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -309,6 +490,26 @@ video {
     opacity: 1;
   }
 }
+@keyframes tilt-in-left-2 {
+  0% {
+    transform: rotateX(30deg) translateX(-300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-right-2 {
+  0% {
+    transform: rotateX(30deg) translateX(300px) skewX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
 .descripcion_principal {
   cursor: default;
   margin-top: 400px;
@@ -320,7 +521,7 @@ video {
   font-size: 25px;
   font-family: della respira;
   margin-bottom: 20px;
-  background-color: #b88e5d;
+  background-color: rgba(184, 142, 93, 0.8823529412);
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .descripcion_principal p {
@@ -373,6 +574,7 @@ video {
   text-align: center;
   width: 70%;
 }
+
 .carousel-caption button {
   animation: roll-in-blurred-bottom 1.3s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
@@ -382,6 +584,7 @@ video {
   background-color: #0e224e;
   transition: transform 0.5s ease;
 }
+
 .carousel-inner button:hover {
   transform: scale(1.3);
 }
@@ -402,11 +605,95 @@ button {
 }
 
 .column {
-  margin: 20px;
+  margin: 25px;
 }
 
 .btn_resp button {
+  transition: transform 0.5s ease;
   background-color: #ec8600;
+}
+.btn_resp button:hover {
+  transform: scale(1.2);
+}
+
+.detail-sidebar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.detail-sidebar .form-elements {
+  flex: 1;
+  margin: 50px 20px;
+  padding: 15px 5px;
+  text-align: center;
+}
+.detail-sidebar .form-elements h4 {
+  text-align: center;
+}
+.detail-sidebar .form-elements .awe-select-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail-sidebar .form-elements:last-child {
+  margin-right: 12px;
+}
+
+.imgg {
+  width: 70%;
+  margin-top: 75px;
+  margin-left: 25px;
+  order: 1;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgg img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: animate 16s infinite;
+}
+
+.imgg img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.imgg img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.imgg img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.imgg img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes animate {
+  0%, 100% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#prices-content {
+  flex: 1;
+  order: 2;
 }
 @keyframes tracking-in-expand-fwd {
   0% {
@@ -504,7 +791,7 @@ option {
   display: flex;
   flex-direction: column;
   padding: 15px 0 0 20px;
-  background-color: #b88e5d;
+  background-color: rgba(184, 142, 93, 0.8823529412);
   text-decoration: underline;
 }
 .info-container .column h3 {
@@ -520,64 +807,70 @@ option {
   font-size: 15px;
 }
 .item-price button:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 450px;
+  margin-top: 400px;
   text-align: left;
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 .formulario h1 {
   font-size: 25px;
-  justify-content: left;
   font-family: "della respira";
-  background-color: #b88e5d;
+  background-color: rgba(184, 142, 93, 0.8823529412);
   width: 100%;
-  margin: 0 40px 50px 60px;
+  margin: 0 0 50px 0;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  text-align: left;
 }
 .formulario .datos,
 .formulario .consulta {
-  width: 700px;
+  width: 500px;
   padding: 40px;
-  background-color: rgb(144, 178, 231);
+  background-image: url(../img/mobile-img/formm.png);
   border-radius: 10px;
   margin-bottom: 40px;
   box-shadow: none;
 }
-.formulario .datos h3,
-.formulario .consulta h3 {
-  margin-bottom: 30px;
+.formulario .datos h2,
+.formulario .consulta h2 {
+  margin-bottom: 20px;
   color: #fff;
+  text-align: left;
 }
-.formulario input,
-.formulario textarea {
+.formulario .datos label,
+.formulario .consulta label {
+  display: block;
+  margin-bottom: 10px;
+}
+.formulario .datos input,
+.formulario .datos textarea,
+.formulario .consulta input,
+.formulario .consulta textarea {
   width: 100%;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #ccc;
   padding: 10px;
   margin-top: 5px;
 }
-.formulario textarea {
+.formulario .datos textarea,
+.formulario .consulta textarea {
   height: 150px;
 }
 .formulario button {
   background-color: #4c68af;
   border: none;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 20px;
   font-size: 18px;
-  margin: 20px;
+  margin: 20px 0;
   cursor: pointer;
   border-radius: 5px;
-}
-.formulario .terminos-politicas {
-  text-align: center;
-  margin-top: 20px;
+  margin-left: 150px;
 }
 
 footer {
@@ -619,6 +912,9 @@ footer a:hover {
 }
 
 @media (max-width: 430px) {
+  .contenedorr {
+    display: none;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -626,8 +922,8 @@ footer a:hover {
   }
   header .header_superior {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     padding: 1px;
     background-image: url("../img/estrela.png");
@@ -647,8 +943,8 @@ footer a:hover {
   }
   header .header_superior .search {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   header .header_superior .search input {
     width: 200px;
@@ -676,11 +972,11 @@ footer a:hover {
   }
   header .container_menu .menu nav .checkbtn {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: 80px;
-    background-color: #b88e5d;
+    background-color: rgba(184, 142, 93, 0.8823529412);
     border-radius: 50px;
     height: 40px;
     width: 40px;
@@ -697,7 +993,7 @@ footer a:hover {
     height: 300px;
     top: auto;
     width: 140px;
-    background-color: #b88e5d;
+    background-color: rgba(184, 142, 93, 0.8823529412);
     left: -100%;
     transition: all 0.5s;
     z-index: 1;
@@ -733,7 +1029,7 @@ footer a:hover {
     padding: 3px 0 3px 3px;
     transition: all 0.3s ease;
     text-align: center;
-    background-color: #b88e5d;
+    background-color: rgba(184, 142, 93, 0.8823529412);
   }
   header .container_menu .menu nav ul li ul.submenu li a {
     font-size: 16px;
@@ -747,12 +1043,28 @@ footer a:hover {
   }
   .card {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     display: block;
     margin: auto;
     padding: 10px;
     margin-top: 20px;
+  }
+  .card .off {
+    position: absolute;
+    top: auto;
+    right: 10px;
+    background-color: rgba(252, 119, 10, 0.897);
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  h3 {
+    text-align: center;
+    font-family: della respira;
   }
   img {
     animation: scale-in-hor-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -820,9 +1132,33 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
+  .detail-sidebar .imgg {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+    margin: 40px 0;
+  }
+  .detail-sidebar .imgg {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    margin: 10px 0;
+  }
+  .detail-sidebar .form-elements {
+    width: 70%;
+    margin: 10px 0;
+  }
+  .detail-sidebar .form-elements select,
+  .detail-sidebar .form-elements input,
+  .detail-sidebar .form-elements textarea {
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+  }
   .info-container {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
   }
   .columna li {
     padding: 7px;
@@ -837,45 +1173,27 @@ footer a:hover {
     color: #bdb4b4;
     border: #000000;
   }
-  .formulario {
+  .contenedor-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
   }
-  .formulario h1 {
-    margin-top: 200px;
-    text-shadow: none;
+  .formulario {
+    margin-top: 50px;
+  }
+  h1 {
     font-size: 18px;
-    color: #000000;
   }
-  .formulario .datos,
-  .formulario .consulta {
-    width: 90%;
-    padding: 20px;
-    margin-bottom: 20px;
+  .datos,
+  .consulta {
+    padding: 15px;
+    margin-bottom: 15px;
   }
-  .formulario .datos h2,
-  .formulario .consulta h2 {
-    margin-bottom: 20px;
-  }
-  .formulario input,
-  .formulario textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-  }
-  .formulario .terminos-politicas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .formulario .terminos-politicas a {
-    margin-left: 5px;
+  button {
+    font-size: 14px;
   }
   footer {
     width: 100%;
-    margin-top: 65px;
+    margin-top: 10px;
     bottom: 0;
     left: 0;
     padding: 10px;
@@ -883,8 +1201,8 @@ footer a:hover {
   }
   footer .footer-content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     justify-content: flex-end;
   }
   footer .dat {
@@ -911,14 +1229,14 @@ footer a:hover {
     height: 0;
     width: 100%;
   }
-}
-@keyframes scale-in-hor-center {
-  0% {
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(1);
-    opacity: 1;
+  @keyframes scale-in-hor-center {
+    0% {
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
   }
 }/*# sourceMappingURL=estilo.css.map */

@@ -86,36 +86,31 @@
     </section>
 
     <!-- FORMULARIO -->
-    <div class="formulario">
-        <h1>FORMULARIO DE CONTACTO</h1>
-        <section class="datos">
-            <h2>Ingrese sus datos</h2>
-            <form method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="Nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="Email" required>
-                <label for="codigo-area">Código de área:</label>
-                <input type="text" id="codigo-area" name="Código de área" required>
-                <label for="telefono-contacto">Teléfono de contacto:</label>
-                <input type="text" id="telefono-contacto" name="Teléfono de contacto" required>
-            </form>
-        </section>
-        <section class="consulta">
-            <h2>Ingrese su consulta</h2>
-            <form method="post">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="Mensaje" rows="5" required></textarea>
-                <div class="terminos-politicas">
-                    <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
-                    <label for="acepto-terminos">Acepto los <a href="#">términos y condiciones</a> y las <a href="#">políticas de privacidad</a></label>
-                </div>
-            </form>
-        </section>
-        <button type="submit">Enviar</button>
-    </div>
-    
-    
+    <div class="contenedor-flex">
+        <div class="formulario">
+            <h1> FORMULARIO DE CONTACTO</h1>
+            <section class="datos">
+                <h2>Ingrese sus datos</h2>
+                <form method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required>
+                    <label for="codigo-area">Código de área:</label>
+                    <input type="text" id="codigo-area" name="Código de área" required>
+                    <label for="telefono-contacto">Teléfono de contacto:</label>
+                    <input type="text" id="telefono-contacto" name="Teléfono de contacto" required>
+                </form>
+            </section>
+            <section class="consulta">
+                <h2>Ingrese su consulta</h2>
+                <form method="post">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="Mensaje" rows="5" required></textarea>
+                </form>
+                <button type="submit">Enviar</button>
+            </section>
+        </div> 
 
 <!--PIE DE PAGINA-->
 <footer>
