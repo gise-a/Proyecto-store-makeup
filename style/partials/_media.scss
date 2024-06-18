@@ -315,29 +315,37 @@
         border: #000000;
     }
 
-    .contenedor-flex{
-display: flex;
-flex-direction: column;
+    .formulario {
+        width: 90%;
+        margin-top: 150px;
+        padding: 10px;
+        margin-left: 20px;
+
+        h1{
+            font-size: 20px;
+        }
+
+    .datos,
+    .consulta {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    button {
+        width: auto;
+        font-size: 16px; /* Reducción del tamaño de fuente */
+        align-items: center;
+        margin: 10px 90px;
     }
 
-        .formulario {
-            margin-top: 50px;
+        h2 {
+            margin-bottom: 10px;
         }
-    
-        h1 {
-            font-size: 18px; 
+
+        textarea {
+            height: 80px;
         }
-    
-        .datos,
-        .consulta {
-            padding: 15px;
-            margin-bottom: 15px; 
-        }
-    
-        button {
-            font-size: 14px; 
-        }
-    
+    }
 
     footer {
         width: 100%;
