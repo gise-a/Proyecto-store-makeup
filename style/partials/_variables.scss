@@ -53,6 +53,12 @@ $color-fondo-oferta: rgba(252, 86, 10, 0.76);
     flex-direction: column;
 }
 
+@mixin column {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 @mixin hover-transform-scale {
     &:hover {
         transform: scale(1.1);
