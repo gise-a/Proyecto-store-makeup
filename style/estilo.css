@@ -575,12 +575,22 @@ video {
   width: 70%;
 }
 
+.carousel-control-prev-icon {
+  margin-right: 150px;
+  margin-top: 150px;
+}
+
+.carousel-control-next-icon {
+  margin-right: 120px;
+  margin-top: 150px;
+}
+
 .carousel-caption button {
   animation: roll-in-blurred-bottom 1.3s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .carousel-inner button {
-  margin-top: 80px;
+  margin: 80px 10px;
   background-color: #0e224e;
   transition: transform 0.5s ease;
 }
@@ -1254,6 +1264,9 @@ footer a:hover {
   }
   .container-f .img-container .social-contact a {
     font-size: 35px;
+  }
+  .item-price button {
+    width: auto;
   }
   .datos,
   .consulta {

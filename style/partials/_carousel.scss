@@ -74,13 +74,23 @@
     width: 70%;
 }
 
+.carousel-control-prev-icon{
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.carousel-control-next-icon{
+    margin-right: 120px;
+    margin-top: 150px;
+}
+
 .carousel-caption button {
     -webkit-animation: roll-in-blurred-bottom 1.3s cubic-bezier(.23, 1.000, .32, 1.000) both;
     animation: roll-in-blurred-bottom 1.3s cubic-bezier(.23, 1.000, .32, 1.000) both;
 }
 
 .carousel-inner button {
-    margin-top: 80px;
+    margin: 80px 10px;
     background-color: $colorbuttoncarr;
     transition: transform 0.5s ease;
 }
