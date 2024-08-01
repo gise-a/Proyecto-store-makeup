@@ -1,184 +1,132 @@
 header {
     width: 100%;
-    padding: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 40px;
+    background-color: pink; 
+
+
+    p {
+        text-align: center; 
+        margin: 0; 
+        padding: 8px 0; 
+        font-size: 16px;
+        font-weight: bold;
+        color: #333; 
+        white-space: nowrap; 
+        display: inline-block;
+        animation: marquee 25s linear infinite; /* Apply the scrolling animation */
+    }
+}
 
     .header_superior {
-        max-width: 1200px;
-        margin: auto;
-        @include center-flex;
+        display: flex;
         justify-content: space-between;
-        z-index: 1;
+        align-items: center;
+        padding: 10px 70px; 
+    }
 
-        .Logo {
-            img {
-                width: 130px;
-                margin-left: 35px;
-                margin-top: 20px;
-                position: absolute;
-            }
+    .Logo {
+        img {
+            width: 240px; 
+            margin: 13px; 
+            position: relative;
+        }
+    }
 
-            p {
-                color: map-get($colors, text);
-                margin-top: 140px;
-                @include text-shadow;
-                @include base-font;
-            }
+    .search {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+
+        input {
+            width: 300px; 
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 18px;
+            border: 1px solid #ccc; 
         }
 
-        .search {
-            input {
-                width: 400px;
-                padding: 10px;
-                border-radius: 20px;
-                border: 1px solid map-get($colors, secondary);
-            }
-
-            button {
-                border-radius: 10px;
-                padding: 10px;
-                border: none;
-                color: map-get($colors, text);
-                background-color: map-get($colors, accent);
-                margin-left: 10px;
-                @include hover-scale;
-            }
-
-            i {
-                padding: 5px;
-            }
+        .fa-magnifying-glass {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
         }
+    }
+
+    .iconos-a {
+        display: flex; 
+        align-items: center; 
+        padding: 10px;
+        margin-left: 15px;
+        gap: 10px;
+    }
+    
+    .iconos-a i {
+        font-size: 1.5rem; 
+        color: rgb(58, 57, 57); 
+        margin-right: 10px; 
     }
 
     .container_menu {
-        width: 800px;
+        background-color: rgb(0, 0, 0); 
+        display: flex;
+        justify-content: center;
+        padding: 10px 0; 
         height: 60px;
-        padding: 0px 20px;
-        margin-left: 520px;
-        position: static;
-        border-radius: 30px;
-        box-shadow: 3px 1px 5px rgb(0, 0, 0);
+        position: relative;
+        z-index: 10;
 
-        .menu {
-            max-width: 1200px;
-            margin: auto;
-            height: 100%;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: rgb(245, 162, 176);
+        }
 
-            nav {
-                height: 100%;
+        nav li {
+            position: relative;
+            margin: 0 15px;
+        }
 
-                ul {
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-around;
+        nav a {
+            color: rgb(245, 162, 176);
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
 
-                    li {
-                        height: 100%;
-                        list-style: none;
-                        position: relative;
+        nav a:hover {
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+        }
 
-                        a {
-                            width: 100%;
-                            height: 100%;
-                            @include center-flex;
-                            padding: 15px;
-                            color: map-get($colors, text);
-                            @include text-shadow;
-                            font-size: 16px;
-                            line-height: 0.6;
-                            font-weight: bold;
-                            @include hover-scale;
-                            transition: background-color 0.1s ease;
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%; /* Asegura que el submenú esté justo debajo del elemento padre */
+            left: 0;
+            background-color: rgb(0, 0, 0); /* Color de fondo del menú */
+            padding: 10px;
+            z-index: 10; 
+            border-radius: 10px;
+        }
 
-                            &:hover {
-                                background-color: map-get($colors, hover);
-                            }
-                        }
+        nav li:hover .submenu {
+            display: block;
+        }
 
-                        .submenu {
-                            position: absolute;
-                            top: 60px;
-                            left: 0;
-                            height: auto;
-                            border-radius: 20px;
-                            box-shadow: 3px 1px 5px rgb(0, 0, 0);
-                            width: 170%;
-                            list-style: none;
-                            font-weight: 500;
-                            display: none;
-                            flex-direction: column;
-                            justify-content: left;
-                            text-align: left;
-                            padding: 10px;
+        .submenu li {
+            margin: 10px 0;
+        }
 
-                            li {
-                                margin: 8px;
-                                text-align: center;
-
-                                a {
-                                    color: map-get($colors, text);
-                                    @include text-shadow;
-                                    font-size: 18px;
-                                    transition: all 250ms ease;
-                                    padding: 6px;
-
-                                    &:hover {
-                                        @include hover-scale;
-                                        background-color: map-get($colors, hover);
-                                        padding: 20px;
-                                        margin: 4px;
-                                        justify-content: center;
-                                        text-align: center;
-                                        width: 100%;
-                                        line-height: 0.2;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:hover .submenu {
-                            display: block;
-                        }
-
-                        ul {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            position: absolute;
-                            top: 60px;
-                            line-height: 20px;
-                        }
-                    }
-                }
-
-                .checkbtn {
-                    display: none;
-                }
-            }
-
-            #check {
-                display: none;
-            }
+        .submenu a {
+            padding: 8px 16px;
         }
     }
-}
 
-a {
-    text-decoration: none;
-}
-
-.card,
-.checkbtn,
-#check,
-.search i {
-    display: none;
-}
-
-.header_pags header {
-    height: 280px;
-    background-size: cover;
-    background-image: url("../img/estrela.png");
-}
+    @keyframes marquee {
+        0% {transform: translateX(100%); }100% { transform: translateX(-100%); }
+    }
